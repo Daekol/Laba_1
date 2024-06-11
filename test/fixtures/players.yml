@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idplayers: 1
+  player_name: MyString
+  player_surname: MyString
+  player_nick: MyString
+  player_age: 1
+  teams_idteams: 1
+
+two:
+  idplayers: 1
+  player_name: MyString
+  player_surname: MyString
+  player_nick: MyString
+  player_age: 1
+  teams_idteams: 1

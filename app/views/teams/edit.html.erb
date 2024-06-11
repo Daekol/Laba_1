@@ -1,0 +1,11 @@
+<h1>Editing team</h1>
+
+<%= render "form", team: @team %>
+
+<br>
+
+<div>
+  <%= link_to "Show this team", @team, class: "btn btn-primary" %>
+  <%= link_to "Back to teams", teams_path, class: "btn btn-secondary" %>
+  <%= link_to "Destroy", @team, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+</div>

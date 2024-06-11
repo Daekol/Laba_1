@@ -1,0 +1,25 @@
+
+    <h2>Додати відгук</h2>
+<%= form_for :page, url: page_path do |f|%>
+<p>
+Name <br>
+<%= f.text_field(:title, {:class =>'form-control'}) %>
+</p>
+<p>
+<p>
+Age <br>
+<%= f.text_field(:title, {:class =>'form-control'}) %>
+</p>
+<p>
+<p>
+Email <br>
+<%= f.text_field(:title, {:class =>'form-control'}) %>
+</p>
+<p>
+Feedback <br>
+<%= f.text_area(:body, {:class =>'form-control'}) %>
+</p>
+<p>
+<%= f.submit({:class =>'btn btn-success'}) %>
+</p>
+<% end %>

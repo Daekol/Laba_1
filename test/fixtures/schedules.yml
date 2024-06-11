@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idmatches: 1
+  teams_idteams1: 1
+  teams_idteams2: 1
+  date: 2023-12-23 19:25:08
+  tournament_place: MyString
+  team1_points_earned: 1
+  teams2_points_earned: 1
+  tournaments_idtournaments: 1
+
+two:
+  idmatches: 1
+  teams_idteams1: 1
+  teams_idteams2: 1
+  date: 2023-12-23 19:25:08
+  tournament_place: MyString
+  team1_points_earned: 1
+  teams2_points_earned: 1
+  tournaments_idtournaments: 1

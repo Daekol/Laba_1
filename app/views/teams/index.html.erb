@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Teams</h1>
+
+<div id="teams">
+  <% @teams.each do |team| %>
+    <%= render team %>
+    <p>
+    <%= link_to "Show this team", @team, class: "btn btn-primary" %>
+    <%= link_to "Destroy", @team, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New team", new_team_path, class: "btn btn-primary" %>
+
+

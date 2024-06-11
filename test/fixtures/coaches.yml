@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idcoaches: 1
+  coach_name: MyString
+  coach_surname: MyString
+  coach_nick: MyString
+  coach_age: 1
+  teams_idteams: 1
+
+two:
+  idcoaches: 1
+  coach_name: MyString
+  coach_surname: MyString
+  coach_nick: MyString
+  coach_age: 1
+  teams_idteams: 1

@@ -1,0 +1,57 @@
+<%= form_with(model: schedule) do |form| %>
+  <% if schedule.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(schedule.errors.count, "error") %> prohibited this schedule from being saved:</h2>
+
+      <ul>
+        <% schedule.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :idmatches, style: "display: block" %>
+    <%= form.number_field :idmatches %>
+  </div>
+
+  <div>
+    <%= form.label :teams_idteams1, style: "display: block" %>
+    <%= form.number_field :teams_idteams1 %>
+  </div>
+
+  <div>
+    <%= form.label :teams_idteams2, style: "display: block" %>
+    <%= form.number_field :teams_idteams2 %>
+  </div>
+
+  <div>
+    <%= form.label :date, style: "display: block" %>
+    <%= form.datetime_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :tournament_place, style: "display: block" %>
+    <%= form.text_field :tournament_place %>
+  </div>
+
+  <div>
+    <%= form.label :team1_points_earned, style: "display: block" %>
+    <%= form.number_field :team1_points_earned %>
+  </div>
+
+  <div>
+    <%= form.label :teams2_points_earned, style: "display: block" %>
+    <%= form.number_field :teams2_points_earned %>
+  </div>
+
+  <div>
+    <%= form.label :tournaments_idtournaments, style: "display: block" %>
+    <%= form.number_field :tournaments_idtournaments %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
